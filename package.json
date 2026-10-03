@@ -1,0 +1,32 @@
+{
+  "name": "repo-security-scan-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that triages AI-built web apps (Next.js, Vite, Express, Supabase, Firebase) for leaked secrets, missing row-level security, open rules and unprotected routes. Local, read-only, no network.",
+  "main": "server.mjs",
+  "scripts": {
+    "test": "node test-client.mjs",
+    "start": "node server.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "security",
+    "claude",
+    "supabase",
+    "firebase",
+    "code-review"
+  ],
+  "author": "sahan411",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.6.5"
+  },
+  "bin": {
+    "repo-security-scan-mcp": "server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
